@@ -13,14 +13,14 @@ c.execute('''CREATE TABLE logs (datetime text, log_message text)''')
 
 c.execute("DROP TABLE stats")
 
-c.execute("SELECT * FROM stats")
+c.execute("SELECT COUNT(*) FROM stats")
 rows = c.fetchall()
 for row in rows:
     print(row)
 
 c.execute("DROP TABLE _Цветы_для_Элджернона_Flowers_for_Algernon")
 
-c.execute("SELECT * FROM _Цветы_для_Элджернона_Flowers_for_Algernon")
+c.execute("SELECT COUNT(*) FROM _Цветы_для_Элджернона_Flowers_for_Algernon")
 rows = c.fetchall()
 for row in rows:
     print(row)
