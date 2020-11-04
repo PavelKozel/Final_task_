@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "input_folder_path": "C:/Work/Input",
+    "trash_folder_path": "C:/Work/Incorrect_input",
+    "processed_folder_path": "C:/Work/Processed",
+    "dbase_path": "C:/sqlite/db/ebooksstat2.db",
+    "period_of_monitoring_seconds": "5",
+    "interval_of_checking": "5"
+  },
+
+  "uat": {
+  }
+}

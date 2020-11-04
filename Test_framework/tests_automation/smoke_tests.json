@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Check table 'stats' for data existence",
+      "query": "SELECT COUNT(*) FROM stats",
+      "expected": 1
+    },
+    {
+      "name": "Check table 'words' for data existence",
+      "query": "SELECT COUNT(*) FROM logs",
+      "expected": 14263
+    }
+  ]
+}

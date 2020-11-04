@@ -1,0 +1,12 @@
+
+
+Testing of C:/Users/Pavel_Kozel/PycharmProjects/pythonProject/lessons/Project/Test_framework/tests_automation\smoke_tests.json was started
+
+
+Test case 'Check table 'stats' for data existence'
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM stats
+
+Test case 'Check table 'words' for data existence'
+FAIL. Result is '8', but expected '14263'
+	Query: SELECT COUNT(*) FROM logs

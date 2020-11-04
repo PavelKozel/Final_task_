@@ -1,0 +1,9 @@
+{
+  "dev": {
+    "database": "C:/sqlite/db/ebooksstat2.db",
+    "test_data_folder": "C:/Users/Pavel_Kozel/PycharmProjects/pythonProject/lessons/Project/Test_framework/tests_automation"
+  },
+
+  "uat": {
+  }
+}
