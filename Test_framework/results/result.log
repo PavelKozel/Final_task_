@@ -10,3 +10,7 @@ PASS. Result is '1' as expected
 Test case 'Check table 'words' for data existence'
 FAIL. Result is '8', but expected '14263'
 	Query: SELECT COUNT(*) FROM logs
+
+Test case 'Check number of tables'
+FAIL. Result is '_Цветы_для_Элджернона_Flowers_for_Algernon', but expected '3'
+	Query: SELECT name FROM sqlite_master where name not in ('logs', 'stats')
