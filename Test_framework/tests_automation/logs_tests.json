@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Check log table for the correct status ' Starting moving not fb2 files'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Starting moving not fb2 files'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' All files in the input folder are correct'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' All files in the input folder are correct'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' Starting filling book table'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Starting filling book table'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' Book table is filled'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Book table is filled'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' Starting filling words table'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Starting filling words table'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' Words table is filled'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Words table is filled'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' Starting moving processed fb2 files'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' Starting moving processed fb2 files'",
+      "expected": 1
+    },
+    {
+      "name": "Check log table for the correct status ' All processed files are moved to processed folder'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' All processed files are moved to processed folder'",
+      "expected": 1
+    }
+  ]
+}

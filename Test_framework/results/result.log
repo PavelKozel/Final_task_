@@ -1,5 +1,40 @@
 
 
+Testing of C:/Users/Pavel_Kozel/PycharmProjects/pythonProject/lessons/Project/Test_framework/tests_automation\logs_tests.json was started
+
+
+Test case 'Check log table for the correct status ' Starting moving not fb2 files''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Starting moving not fb2 files'
+
+Test case 'Check log table for the correct status ' All files in the input folder are correct''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' All files in the input folder are correct'
+
+Test case 'Check log table for the correct status ' Starting filling book table''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Starting filling book table'
+
+Test case 'Check log table for the correct status ' Book table is filled''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Book table is filled'
+
+Test case 'Check log table for the correct status ' Starting filling words table''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Starting filling words table'
+
+Test case 'Check log table for the correct status ' Words table is filled''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Words table is filled'
+
+Test case 'Check log table for the correct status ' Starting moving processed fb2 files''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' Starting moving processed fb2 files'
+
+Test case 'Check log table for the correct status ' All processed files are moved to processed folder''
+PASS. Result is '1' as expected
+	Query: SELECT COUNT(*) FROM logs WHERE log_message=' All processed files are moved to processed folder'
+
 Testing of C:/Users/Pavel_Kozel/PycharmProjects/pythonProject/lessons/Project/Test_framework/tests_automation\smoke_tests.json was started
 
 
@@ -8,9 +43,3 @@ PASS. Result is '1' as expected
 	Query: SELECT COUNT(*) FROM stats
 
 Test case 'Check table 'words' for data existence'
-FAIL. Result is '8', but expected '14263'
-	Query: SELECT COUNT(*) FROM logs
-
-Test case 'Check number of tables'
-FAIL. Result is '_Цветы_для_Элджернона_Flowers_for_Algernon', but expected '3'
-	Query: SELECT name FROM sqlite_master where name not in ('logs', 'stats')

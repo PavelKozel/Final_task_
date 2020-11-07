@@ -7,8 +7,13 @@
     },
     {
       "name": "Check table 'words' for data existence",
-      "query": "SELECT COUNT(*) FROM logs",
+      "query": "SELECT COUNT(*) FROM _Цветы_для_Элджернона_Flowers_for_Algernon",
       "expected": 14263
+    },
+    {
+      "name": "Check number of tables",
+      "query": "SELECT COUNT(*) FROM sqlite_master where name not in ('logs', 'stats')",
+      "expected": 1
     }
   ]
 }

@@ -22,7 +22,7 @@ for row in rows:
 
 c.execute("DROP TABLE _Цветы_для_Элджернона_Flowers_for_Algernon")
 
-c.execute("SELECT * FROM _Цветы_для_Элджернона_Flowers_for_Algernon where word = 'и'")
+c.execute("SELECT * FROM _Цветы_для_Элджернона_Flowers_for_Algernon where word like 'Нью%'")
 rows = c.fetchall()
 for row in rows:
     print(row)
@@ -34,7 +34,7 @@ rows = c.fetchall()
 for row in rows:
     print(row)
 
-c.execute("SELECT * FROM sqlite_master")
+c.execute("SELECT name FROM sqlite_master where name not in ('logs', 'stats')")
 rows = c.fetchall()
 for row in rows:
     print(row)
@@ -42,3 +42,4 @@ for row in rows:
 c.execute("DROP TABLE stats")
 c.execute("DROP TABLE logs")
 c.execute("DROP TABLE _Цветы_для_Элджернона_Flowers_for_Algernon")
+

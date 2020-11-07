@@ -1,0 +1,8 @@
+('2020-11-05 10:29:42.395616', ' Starting moving not fb2 files')
+('2020-11-05 10:29:42.399604', ' All files in the input folder are correct')
+('2020-11-05 10:29:42.404605', ' Starting filling book table')
+('2020-11-05 10:29:42.543605', ' Book table is filled')
+('2020-11-05 10:29:42.547607', ' Starting filling words table')
+('2020-11-05 10:29:42.670628', ' Words table is filled')
+('2020-11-05 10:29:42.677608', ' Starting moving processed fb2 files')
+('2020-11-05 10:29:42.688636', ' All processed files are moved to processed folder')
