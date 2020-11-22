@@ -243,6 +243,13 @@ def main():
     parser = Parser()
     statistics = Statistics()
     dbfilling = DBfilling()
+
+    for path in (path1, path2, path3):
+        os.mkdir(path)
+
+    for file_name in os.listdir("Test_data"):               # moving test file to the input folder
+        os.rename(os.path.join("Test_data", file_name), os.path.join(path1, file_name))
+
     connect = connection.newconnection(path4)               # creating connection to the db
     c = connect.cursor()
     try:                                                    # creating table if not exists
@@ -276,3 +283,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
