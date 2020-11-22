@@ -6,8 +6,8 @@
       "expected": 1
     },
     {
-      "name": "Check log table for the correct status ' All files in the input folder are correct'",
-      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' All files in the input folder are correct'",
+      "name": "Check log table for the correct status ' All files with incorrect format are moved to trash folder'",
+      "query": "SELECT COUNT(*) FROM logs WHERE log_message=' All files with incorrect format are moved to trash folder'",
       "expected": 1
     },
     {

@@ -22,7 +22,7 @@ for row in rows:
 
 c.execute("DROP TABLE _Цветы_для_Элджернона_Flowers_for_Algernon")
 
-c.execute("SELECT * FROM _Цветы_для_Элджернона_Flowers_for_Algernon where word like 'Нью%'")
+c.execute("SELECT COUNT(*) FROM _Цветы_для_Элджернона_Flowers_for_Algernon")
 rows = c.fetchall()
 for row in rows:
     print(row)
