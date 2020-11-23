@@ -9,7 +9,7 @@ pipeline {
         stage('Syntax check') {
              steps {
                  powershell """cd Script_ebooks
-                               /usr/local/bin/pylint -f parseable project.py | tee pylint.out"""
+                               pylint -f parseable project.py | tee pylint.out"""
             }
         }
         stage('Build') {
