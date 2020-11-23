@@ -12,11 +12,11 @@ pipeline {
                               python project.py dev"""
             }
         }
-        // stage('Test') {
-        //     steps {
-        //         powershell """cd Test_framework
-        //                       python main.py dev"""
-        //     }
-        // }
+        stage('Test') {
+             steps {
+                 powershell """cd Test_framework
+                               python main.py dev"""
+            }
+        }
     }
 }
