@@ -12,10 +12,16 @@ pipeline {
                               python project.py dev"""
             }
         }
-        stage('Test') {
+//        stage('Test') {
+//             steps {
+//                 powershell """cd Test_framework
+//                               python main.py dev"""
+//            }
+//        }
+        stage('Syntax check') {
              steps {
-                 powershell """cd Test_framework
-                               python main.py dev"""
+                 powershell """cd Script_ebooks
+                               pylint project.py | ty pylint.out"""
             }
         }
     }
