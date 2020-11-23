@@ -6,6 +6,12 @@ pipeline {
                 git 'https://github.com/PavelKozel/testautomation.git'
             }
         }
+        stage('Syntax check') {
+             steps {
+                 powershell """cd Script_ebooks
+                               pylint project.py | ty pylint.out"""
+            }
+        }
         stage('Build') {
             steps {
                 powershell """cd Script_ebooks
@@ -18,11 +24,5 @@ pipeline {
 //                               python main.py dev"""
 //            }
 //        }
-        stage('Syntax check') {
-             steps {
-                 powershell """cd Script_ebooks
-                               pylint project.py | ty pylint.out"""
-            }
-        }
     }
 }
