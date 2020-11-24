@@ -19,19 +19,11 @@ pipeline {
                               python project.py dev"""
             }
         }
-//        stage('Test') {
-//             steps {
-//                 powershell """cd Test_framework
-//                               python main.py dev"""
-//            }
-//        }
-    }
-    post {
-        always {
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline succeeded'
-        }
-        failure {
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline failed'
+        stage('Test') {
+             steps {
+                 powershell """cd Test_framework
+                               python main.py dev"""
+            }
         }
     }
 }
