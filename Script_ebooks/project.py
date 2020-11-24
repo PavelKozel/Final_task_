@@ -1,6 +1,7 @@
 from sys import argv
 import os
 
+
 import collections
 import xml.etree.ElementTree as ET
 import sqlite3
