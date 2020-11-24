@@ -1,6 +1,6 @@
 pipeline {
     agent any
-//    triggers { pollSCM('* * * * *') }
+    triggers { pollSCM('*****') }
     stages {
         stage('Git copy') {
             steps {
@@ -25,13 +25,5 @@ pipeline {
 //                               python main.py dev"""
 //            }
 //        }
-    }
-    post {
-        always {
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline succeeded'
-        }
-        failure {
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline failed'
-        }
     }
 }
