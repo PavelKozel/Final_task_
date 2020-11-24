@@ -26,13 +26,4 @@ pipeline {
 //            }
 //        }
     }
-    post {
-        always {
-//            junit '**/target/*.xml'
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline succeeded :)'
-        }
-        failure {
-            mail to: pavel_kozel@epam.com, subject: 'The Pipeline failed :('
-        }
-    }
 }
