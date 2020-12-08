@@ -43,3 +43,4 @@ c.execute("DROP TABLE stats")
 c.execute("DROP TABLE logs")
 c.execute("DROP TABLE _Цветы_для_Элджернона_Flowers_for_Algernon")
 
+ord('\\')
